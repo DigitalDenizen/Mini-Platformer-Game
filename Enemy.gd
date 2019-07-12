@@ -11,10 +11,10 @@ func _physics_process(delta):
 	motion.y += GRAVITY
 	
 	if motion.x == 0:
-		motion.x=SPEED
+		motion.x+=SPEED
 	
 	if motion.x == 0:
-		motion.x=-SPEED
+		motion.x+=-SPEED
 		
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
